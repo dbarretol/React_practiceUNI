@@ -1,0 +1,16 @@
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Opcional: distribuye el espacio entre los elementos */
+}
+
+.card {
+    width: 30%; /* Opcional: ajusta el ancho de cada tarjeta */
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* En dispositivos más pequeños, ocupa todo el ancho disponible */
+    }
+}

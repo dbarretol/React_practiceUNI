@@ -11,6 +11,7 @@ import ProductoDetalle from './pages/ProductoDetalle'
 import Carrito from './pages/Carrito'
 import Directores from './pages/Directores'
 import Pedidos from './pages/Pedidos'
+import PedidoDetalle from './pages/PedidoDetalle'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/carrito' element={<Carrito />} />
             <Route path='/directores' element={<Directores />} />
             <Route path='/pedidos' element={<Pedidos />} />
+            <Route path='/pedidodetalle/:idpedido' element={<PedidoDetalle />} />
           </Routes>
         </main>
 

@@ -1,6 +1,7 @@
 /* Punto 2 de tarea */
 import { useEffect, useState } from "react";
 import { ApiWebURL } from "../utils";
+import { Link } from "react-router-dom";
 
 function Pedidos() {
     const [listaPedidos, setListaPedidos] = useState([]);
@@ -34,6 +35,7 @@ function Pedidos() {
                 <tbody>
                     {listaPedidos.map(item => (
                         <tr key={item.idpedido}>
+                            <td><Link to={`/pedidodetalle/${item.idpedido}`}>{item.idpedido}</Link></td>
                             <td>{item.idpedido}</td>
                             <td>{item.fechapedido}</td>
                             <td>{item.nombres}</td>
