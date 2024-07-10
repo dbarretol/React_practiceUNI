@@ -27,6 +27,9 @@ function MainNav() {
                         </li>
                     </ul>
                     <ul className="navbar-nav">
+                        <Link to='/seleccionados'>
+                            <i className="bi bi-people"></i> Seleccionados
+                        </Link>
                         <li className="nav-item">
                             <Link className="nav-link" to="/carrito"><i className="bi bi-basket"></i> Carrito</Link>
                         </li>

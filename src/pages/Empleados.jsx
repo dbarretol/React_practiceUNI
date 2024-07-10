@@ -18,31 +18,36 @@ function Empleados() {
                 setListaEmpleados(data)
             })
     }
-
+    const seleccionarEmpleado = (empleado) => {
+        let seleccionados = JSON.parse(sessionStorage.getItem('empleadosSeleccionados')) || [];
+        if (!seleccionados.find(emp => emp.idempleado === empleado.idempleado)) {
+            seleccionados.push(empleado);
+            sessionStorage.setItem('empleadosSeleccionados', JSON.stringify(seleccionados));
+        }
+    };
     const dibujarCuadricula = () => {
         return (
             <div className="row row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-2  g-4">
-
-            {listaEmpleados.map(item =>
-                <div className="col"  key={item.idempleado}>
-                    <div className="card">
-                        <img src={ApiWebURL + "fotos/" + item.foto} className="card-img-top" alt={item.nombres} />
-                        <div className="card-body">
-                            <h5 className="card-title">{item.nombres} {item.apellidos}</h5>
-                            <p className="card-text">{item.cargo}</p>
+                {listaEmpleados.map(item => (
+                    <div className="col" key={item.idempleado}>
+                        <div className="card" onClick={() => seleccionarEmpleado(item)}>
+                            <img src={ApiWebURL + 'fotos/' + item.foto} className="card-img-top" alt={item.nombres} />
+                            <div className="card-body">
+                                <h5 className="card-title">{item.nombres} {item.apellidos}</h5>
+                                <p className="card-text">{item.cargo}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            )}
-
+                ))}
             </div>
-        )
-    }
+        );
+    };
 
     return (
         <section id='empleados' className='padded'>
             <div className="container">
-                <h2>Empleados</h2>
+                <h2>Empleados </h2>
+                <p>(Dar click en la tarejta para seleccionar a los empleados)</p>
                 {dibujarCuadricula()}
             </div>
         </section>
