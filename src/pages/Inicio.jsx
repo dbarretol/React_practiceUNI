@@ -2,6 +2,7 @@ import Envios from "../home/Envios"
 import MainBanner from "../home/MainBanner"
 import Nosotros from "../home/Nosotros"
 import Noticias from "../home/Noticias"
+import Testimonios from "../home/Testimonios"
 
 function Inicio() {
     return (
@@ -10,6 +11,7 @@ function Inicio() {
             <Nosotros/>
             <Noticias/>
             <Envios/>
+            <Testimonios />
         </>
     )
 }
