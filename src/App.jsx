@@ -10,28 +10,30 @@ import Tienda from './pages/Tienda'
 import ProductoDetalle from './pages/ProductoDetalle'
 import Carrito from './pages/Carrito'
 import Directores from './pages/Directores'
+import Pedidos from './pages/Pedidos'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <MainHeader/>
-        <MainNav/>
-        
+        <MainHeader />
+        <MainNav />
+
         <main>
           <Routes>
 
-            <Route path='/' element={<Inicio/>} />
-            <Route path='/proveedores' element={<Proveedores/>} />
-            <Route path='/empleados' element={<Empleados/>} />
-            <Route path='/tienda' element={<Tienda/>} />
-            <Route path='/productodetalle/:idproducto' element={<ProductoDetalle/>} />
-            <Route path='/carrito' element={<Carrito/>} />
-            <Route path='/directores' element={<Directores/>} />
+            <Route path='/' element={<Inicio />} />
+            <Route path='/proveedores' element={<Proveedores />} />
+            <Route path='/empleados' element={<Empleados />} />
+            <Route path='/tienda' element={<Tienda />} />
+            <Route path='/productodetalle/:idproducto' element={<ProductoDetalle />} />
+            <Route path='/carrito' element={<Carrito />} />
+            <Route path='/directores' element={<Directores />} />
+            <Route path='/pedidos' element={<Pedidos />} />
           </Routes>
         </main>
 
-        <MainFooter/>
+        <MainFooter />
       </BrowserRouter>
     </>
   )

@@ -22,6 +22,9 @@ function MainNav() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/directores">Directores</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/pedidos">Pedidos</Link>
+                        </li>
                     </ul>
                     <ul className="navbar-nav">
                         <li className="nav-item">
@@ -30,7 +33,7 @@ function MainNav() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/"><i className="bi bi-person"></i> Iniciar sesión</Link>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
