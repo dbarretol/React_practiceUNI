@@ -13,6 +13,7 @@ import Directores from './pages/Directores'
 import Pedidos from './pages/Pedidos'
 import PedidoDetalle from './pages/PedidoDetalle'
 import Seleccionados from './pages/Seleccionados'
+import Paises from './pages/Paises'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path='/pedidos' element={<Pedidos />} />
             <Route path='/pedidodetalle/:idpedido' element={<PedidoDetalle />} />
             <Route path='/seleccionados' element={<Seleccionados />} />
+            <Route path='/paises' element={<Paises />} />
           </Routes>
         </main>
 
