@@ -2,8 +2,8 @@ function MainHeader() {
   return (
     <header>
         <div className="container">
-        <h1>Ideas Digitales</h1>
-        <p>Vine, ví y vencí</p>
+        <h1><strong>La Tienda del Encanto</strong> </h1>
+        <em>"Donde los regalos tienen ese toque mágico."</em>
         </div>
     </header>
   )
