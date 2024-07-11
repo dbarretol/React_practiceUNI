@@ -26,21 +26,22 @@ function Pedidos() {
                 <thead>
                     <tr>
                         <th>ID Pedido</th>
-                        <th>Fecha</th>
                         <th>Cliente</th>
-                        {/*<th>Estado</th>*/}
+                        <th>Usuario</th>
                         <th>Total</th>
+                        <th>Fecha</th>
+                        {/*<th>Estado</th>*/}
                     </tr>
                 </thead>
                 <tbody>
                     {listaPedidos.map(item => (
                         <tr key={item.idpedido}>
                             <td><Link to={`/pedidodetalle/${item.idpedido}`}>{item.idpedido}</Link></td>
-                            <td>{item.idpedido}</td>
-                            <td>{item.fechapedido}</td>
                             <td>{item.nombres}</td>
-                            {/*<td>{item.usuario}</td>*/}
+                            <td>{item.usuario}</td>
                             <td>{item.total}</td>
+                            {/*<td>{item.usuario}</td>*/}
+                            <td>{item.fechapedido}</td>
                         </tr>
                     ))}
                 </tbody>
