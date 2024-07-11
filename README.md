@@ -1,8 +1,8 @@
-# React + Vite
+# Proyecto final - Cursos React (RSDS UNI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+En este repositorio se almacenan lso codigos fuentes del proyecto en React que se estuvo desarrollando durate el curso brindado por el RSDS UNI.
 
-Currently, two official plugins are available:
+El proyecto se hizo en React, utilziando vite y Bootstrap:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [vitejs](https://vitejs.dev/)
+- [bootstrap](https://getbootstrap.com/)
